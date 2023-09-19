@@ -3,41 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <!-- --------------------------- -->
     <!-- --------------------------- -->
     <!-- --------------------------- -->
-    <header class="main-header container">
-
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat energy.">
-        <img class="main-header__logo-text" src="./img/logo-text.svg" alt="Логотип название Cat energy." width="101" height="18">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+    <header class="main-header">
+      <div class="main-header__wrapper container">
+        <a class="main-header__logo" href="#">
+          <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat energy.">
+          <img class="main-header__logo-text" src="./img/logo-text.svg" alt="Логотип название Cat energy." width="101" height="18">
+        </a>
+        <button class="main-header__toggle main-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <div class="main-nav__wrapper">
+        <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
-              <a class="site-list__link link" href="#">
+              <a class="site-list__link" href="#">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link link" href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link link" href="form.html">
+              <a class="site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
+
     </header>
     <!-- ------------------- -->
     <!-- ------------------- -->

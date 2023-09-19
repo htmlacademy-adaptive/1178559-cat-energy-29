@@ -1,0 +1,20 @@
+@use "../global/variables.scss" as media;
+
+
+@mixin phone {
+  @media screen and (min-width: media.$phone) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: media.$tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: media.$desktop) {
+    @content;
+  }
+}

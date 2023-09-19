@@ -1,0 +1,25 @@
+@use "../mixins/media.scss" as m;
+@use "../global/variables.scss" as v;
+
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  width: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-container {
+  flex: 1;
+}

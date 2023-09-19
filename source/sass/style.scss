@@ -1,1 +1,10 @@
 // Начните писать стили здесь
+@use "./global/fonts.scss";
+@use "./global/variables.scss";
+@use "./global/setup.scss";
+@use "./blocks/page-body.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/container.scss";
+@use "./blocks/logo-main.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/hero.scss";
