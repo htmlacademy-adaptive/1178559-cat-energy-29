@@ -1,0 +1,9 @@
+@use "../mixins/media.scss" as m;
+@use "../global/variables.scss" as v;
+
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 280px;
+}

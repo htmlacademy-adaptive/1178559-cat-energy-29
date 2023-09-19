@@ -1,0 +1,61 @@
+@use "../mixins/media.scss" as m;
+@use "../global/variables.scss" as v;
+
+
+.main-header {
+  position: relative;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  min-height: 65px;
+  margin: 0 auto;
+
+
+  // border-bottom: 1px solid v.$basic-grey;
+  // padding-top: 7px;
+  // padding-bottom: 4px;
+
+
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+
+
+
+
+
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   gap: 56px;
+//   flex-wrap: wrap;
+//   min-height: 53px;
+}
+
+.main-header__toggle {
+  display: flex;
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url("../img/icons/menu.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &--closed {
+    background-image: url("../img/icons/close.svg");
+    width: 20px;
+    height: 20px;
+  }
+
+  @include m.tablet {
+    display: none;
+  }
+}

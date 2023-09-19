@@ -1,0 +1,26 @@
+@use "../mixins/media.scss" as m;
+@use "../global/variables.scss" as v;
+
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image {
+
+
+}
+
+.main-header__logo-text {
+
+}

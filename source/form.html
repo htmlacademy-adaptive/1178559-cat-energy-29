@@ -3,41 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <!-- --------------------------- -->
     <!-- --------------------------- -->
     <!-- --------------------------- -->
-    <header class="main-header container">
-
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat energy.">
-        <img class="main-header__logo-text" src="./img/logo-text.svg" alt="Логотип название Cat energy." width="101" height="18">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+    <header class="main-header">
+      <div class="main-header__wrapper container">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="./img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat energy.">
+          <img class="main-header__logo-text" src="./img/logo-text.svg" alt="Логотип название Cat energy." width="101" height="18">
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <div class="main-nav__wrapper">
+        <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link link" href="index.html">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link link" href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a class="site-list__link link" href="#">
+              <a class="site-list__link" href="#">
                 Подбор программы
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
+
     </header>
     <!-- ------------------- -->
     <!-- ------------------- -->
@@ -86,21 +87,21 @@
                 Выбор программы для вашего кота.
               </h2>
               <div class="form-radio">
-                <label class="form__label form__label-radio">
+                <label class="form__label radio">
                   <input class="radio__input" type="radio" name="goal" value="Похудение" checked>
                   <span class="radio-mark"></span>
                   <span class="radio__label-text">Похудение</span>
                 </label>
               </div>
               <div class="form-radio">
-                <label class="form__label form__label-radio">
+                <label class="form__label radio">
                   <input class="radio__input" type="radio" name="goal" value="Набор массы">
                   <span class="radio-mark"></span>
                   <span class="radio__label-text">Набор массы</span>
                 </label>
               </div>
               <div class="form-radio">
-                <label class="form__label form__label-radio">
+                <label class="form__label radio">
                   <input class="radio__input" type="radio" name="goal" value="Совет">
                   <span class="radio-mark"></span>
                   <span class="radio__label-text">Не знаю (Нужен ваш совет)</span>
@@ -147,7 +148,7 @@
               <div class="form__additionally container">
 
                 <div class="form__checkbox">
-                  <label class="form__label form__label-checkbox">
+                  <label class="form__label checkbox">
                     <input class="checkbox__input" type="checkbox" name="sweetener" value="Сахарозаменитель" checked>
                     <span class="checkbox-mark"></span>
                     <span class="checkbox__label-text">Сахарозаменитель</span>
@@ -155,7 +156,7 @@
                 </div>
 
                 <div class="form__checkbox">
-                  <label class="form__label form__label-checkbox">
+                  <label class="form__label checkbox">
                     <input class="checkbox__input" type="checkbox" name="water" value="Питьевая вода">
                     <span class="checkbox-mark"></span>
                     <span class="checkbox__label-text">Питьевая вода</span>
@@ -163,7 +164,7 @@
                 </div>
 
                 <div class="form__checkbox">
-                  <label class="form__label form__label-checkbox">
+                  <label class="form__label checkbox">
                     <input class="checkbox__input" type="checkbox" name="milk" value="Молоко">
                     <span class="checkbox-mark"></span>
                     <span class="checkbox__label-text">Молоко</span>
@@ -171,7 +172,7 @@
                 </div>
 
                 <div class="form__checkbox">
-                  <label class="form__label form__label-checkbox">
+                  <label class="form__label checkbox">
                     <input class="checkbox__input" type="checkbox" name="vitamins" value="Витамины">
                     <span class="checkbox-mark"></span>
                     <span class="checkbox__label-text">Витамины</span>
