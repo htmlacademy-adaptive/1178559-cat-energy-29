@@ -1,0 +1,7 @@
+@use "../mixins/media.scss" as m;
+@use "../global/variables.scss" as v;
+
+.map {
+  width: 100%;
+  height: 400px;
+}

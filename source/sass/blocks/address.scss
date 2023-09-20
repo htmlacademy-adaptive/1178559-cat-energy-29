@@ -1,0 +1,85 @@
+@use "../mixins/media.scss" as m;
+@use "../global/variables.scss" as v;
+
+.address-store {
+  margin: 0 auto;
+}
+
+.address-store__wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 112px;
+  padding-top: 27px;
+  box-sizing: border-box;
+
+  @include m.tablet {
+    width: 708px;
+    justify-content: space-between;
+  }
+
+  @include m.desktop {
+    margin-top: 92px;
+    z-index: 2;
+    width: 556px;
+    min-height: 199px;
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    background-color: #ffffff;
+    left: 139px;
+  }
+}
+
+.address-store__item {
+  width: 140px;
+
+  @include m.tablet {
+    width: 156px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.address-store__slogan {
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+
+  @include m.tablet {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.address-store__text {
+  margin: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: v.$color-basic-text;
+
+  @include m.tablet {
+    text-align: end;
+  }
+}
+
+.address-store--background {
+  background-color: v.$basic-grey;
+}
+
+.address-store__text-item {
+  padding: 0;
+  margin: 0;
+}
+
+.map {
+  width: 600px;
+  height: 400px;
+}
+

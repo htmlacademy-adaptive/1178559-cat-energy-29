@@ -4,12 +4,24 @@
 
 .main-header {
   position: relative;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   min-height: 65px;
   margin: 0 auto;
 
+  @include m.tablet {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @include m.desktop {
+    display: flex;
+  }
 
   // border-bottom: 1px solid v.$basic-grey;
   // padding-top: 7px;
@@ -22,10 +34,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 
 
@@ -40,6 +53,12 @@
 }
 
 .main-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 2;
   display: flex;
   border: none;
   width: 24px;
@@ -49,11 +68,15 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-  &--closed {
-    background-image: url("../img/icons/close.svg");
-    width: 20px;
-    height: 20px;
+  @include m.tablet {
+    display: none;
   }
+}
+
+.main-header__toggle--closed {
+  background-image: url("../img/icons/close.svg");
+  width: 20px;
+  height: 20px;
 
   @include m.tablet {
     display: none;
