@@ -1,0 +1,81 @@
+@use "../mixins/media.scss" as m;
+@use "../global/variables.scss" as v;
+
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--type-primary {
+  display: flex;
+  justify-content: space-around;
+  min-height: 40px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  align-items: center;
+  background-color: v.$basic-green;
+  border: none;
+
+  @include m.tablet {
+    width: 100%;
+    min-height: 54px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+
+  @include m.desktop {
+    width: 100%;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+}
+
+.button--type-transition {
+  display: flex;
+  height: 40px;
+  color: v.$color-heading;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  align-items: center;
+
+  @include m.tablet {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.button--card {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.button--add {
+  background-color: v.$basic-grey;
+  color: v.$color-basic-text;
+}
+
+.button__secondary {
+  min-height: 40px;
+
+  @include m.desktop {
+    width: 192px;
+  }
+}
+
+.button--hero {
+  width: 100%;
+
+  @include m.tablet {
+    width: 244px;
+    z-index: 2;
+  }
+}

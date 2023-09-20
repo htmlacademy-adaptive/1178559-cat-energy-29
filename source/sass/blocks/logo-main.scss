@@ -5,7 +5,7 @@
 .main-header__logo {
   display: flex;
   align-items: center;
-  height: 38px;
+  min-height: 38px;
 
   &:hover {
     opacity: 0.8;
